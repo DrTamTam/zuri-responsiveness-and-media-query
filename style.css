@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: hsl(0, 100%, 74%) ;
+    background-image: url(bg-intro-desktop.png);
+    font-family: poppins;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 375px) {
+    main{
+        width: 100%;
+        background-image: url(bg-intro-mobile.png);
+        flex-direction: column;
+    }
+    .top-form-form{
+
+        width: 100% !important;
+         
+    }
+
+    .left{
+        margin-bottom: 0px !important;
+        margin-left: 5px !important;
+        width: 375px !important;
+        text-align: center !important;
+        margin-top: 90px !important;
+    }
+
+    .left h1{
+        font-size: 25px !important;
+        padding-bottom: 40px !important;
+        line-height: 30px !important;
+    }
+
+    .top-form{
+        margin-top: 60px !important;
+        height: 95px !important;
+    }
+
+    .form{
+        padding-top: 10px !important;
+        padding-left: 1px !important;
+        margin-top: 8px !important;
+    }
+
+    .form-content{
+        padding-left: 55px !important;
+        padding-right: 55px !important;
+    }
+}
+
+
+
+
+
+
+
+.top-form-form{
+    float: left;
+    display: grid;
+    grid-template-areas: 
+    'a'
+    'b'
+    ;
+    position: relative;
+    width: 40%;
+    margin-right: 145px;
+    
+}
+
+.top-form{
+    padding: 15px;
+    margin: 20px;
+    background-color: hsl(248, 32%, 49%);
+    box-shadow: 0 8px 2px 0px rgba(61, 61, 61, 0.3);
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px;
+    text-align: center; 
+    position: relative;
+    height: 60px;
+    margin-top: 120px;
+}
+
+.form{
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 5px 2px 0px rgba(61, 61, 61, 0.3);
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px;
+    padding-top: 40px;
+    margin-top: 1px;
+    position: relative;
+    height: 85%;
+    padding-bottom: 130px;
+}
+
+.input-field input{
+    font-size: 16px;
+    width: 90%;
+    font-family: poppins;
+    align-content: center;
+    box-sizing: border-box;
+    padding: 12px 12px;
+    margin: 15px 0;
+    border: 1.5px solid gray;
+    border-radius: 5px;
+    position: relative; left: 30px; 
+    font-weight: 600;
+    padding-left: 30px;
+    
+}
+
+.input-field.success input {
+    border-color: gray;
+}
+
+.input-field.error input {
+    border-color: hsl(0, 100%, 74%);
+}
+
+
+
+.form input:focus {
+    border: 1px solid black;
+    outline: none;
+}
+
+.form button{
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    font-family: poppins;
+    font-weight: 600;
+    text-align: center;
+    font-size: 16px;
+    width: 90%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 12px 12px;
+    margin: 10px 0;
+    align-content: center;
+    position: relative; left: 30px; 
+    border: none;
+}
+
+.form button:hover{
+    cursor: pointer;
+}
+
+.form-bottom-content{
+    font-weight: 400;
+    color: rgb(158, 156, 156);
+    text-align: center;
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+.red{
+    color: hsl(0, 100%, 74%) ;
+}
+
+.left {
+    width: 500px;
+    margin: auto;
+    color: white;
+    position: relative;
+    padding-left: 1px;
+    margin-left: 150px;
+    margin-bottom: 300px;
+    float: left;
+    
+}
+
+.left h1{
+    font-weight: 700;
+    padding-bottom: 40px;
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.left p{
+    padding-top: 0px;
+}
+
+.input-field svg{
+    position: absolute;
+    right: 70px;
+    margin-top: -55px;
+    visibility: hidden;
+}
+
+.input-field.error svg {
+    visibility: visible;
+}
+
+.input-field small{
+    float: right;
+    font-style: italic;
+    font-size: x-small;
+    padding-right: 25px;
+    margin-top: -10px;
+    color: hsl(0, 100%, 74%);
+    visibility: hidden;
+}
+
+.input-field.error small{
+    visibility: visible;
+    color: hsl(0, 100%, 74%);
+}
+
+
